@@ -184,6 +184,7 @@ void testDeleteSubtree() //4
 	tree1.T_deleteSubtree(3);
 
 	tree1.T_showTree();
+
 	cout << endl << "Sprawdzamy wielkosc drzewa" << endl;
 	cout << "Wielkosc: " << tree1.T_sizeTree() << endl;
 }

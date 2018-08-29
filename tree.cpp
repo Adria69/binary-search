@@ -247,14 +247,13 @@ void Tree::T_deleteSubtree(int nr) //usuniecie poddrzewa dla okreslonej wartosci
 	Node *temp, *temppar;
 	temp = T_findElementNumber(nr);
 	temppar = temp->parent;
-
+	
 	if (temp->key <= temppar->key)
 		temppar->left = nullptr;
 	else
 		temppar->right = nullptr;
 
 	size_ -= temp->N_deleteNodes();
-	delete temp;
 }
 
 void Tree::T_deleteNode(int nr) //funkcja usuwajaca wezel o podanej wartosci
